@@ -4,31 +4,31 @@ import static org.junit.jupiter.api.Assertions.*;
 public class QuantityMeasurementAppTest {
     @Test
 void testFeetEquality_SameValue() {
-    QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
-    QuantityMeasurementApp.Feet b = new QuantityMeasurementApp.Feet(1.0);
-    assertEquals(a, b);
-    assertEquals(b, a);
+    QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+    QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(1.0);
+    assertEquals(f1, f2);
+    assertEquals(f2, f1);
 }
     @Test
     void testFeetEquality_DifferentValue() {
-        QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet b = new QuantityMeasurementApp.Feet(2.0);
-        assertNotEquals(a, b);
+        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+        QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(2.0);
+        assertNotEquals(f1, f2);
     }
     @Test
     void testFeetEquality_NullComparison() {
-        QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
-        assertNotEquals(a, null);
+        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+        assertNotEquals(f1, null);
     }
     @Test
     void testFeetEquality_DifferentClass() {
-        QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
+        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
         Object other = new Object();
-        assertNotEquals(a, other);
+        assertNotEquals(f1, other);
     }
     @Test
     void testFeetEquality_SameReference() {
-        QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
-        assertEquals(a, a);
+        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+        assertEquals(f1, f1);
     }
 }
