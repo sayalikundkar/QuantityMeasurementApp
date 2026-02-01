@@ -31,4 +31,38 @@ void testFeetEquality_SameValue() {
         QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
         assertEquals(f1, f1);
     }
+    @Test
+    void testInchesEquality_SameValue() {
+        QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
+        QuantityMeasurementApp.Inches b = new QuantityMeasurementApp.Inches(1.0);
+        assertEquals(a, b);
+    }
+
+    @Test
+    void testInchesEquality_DifferentValue() {
+        assertNotEquals(
+                new QuantityMeasurementApp.Inches(1.0),
+                new QuantityMeasurementApp.Inches(2.0)
+        );
+    }
+
+    @Test
+    void testInchesEquality_NullComparison() {
+        QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
+        assertNotEquals(a, null);
+    }
+
+    @Test
+    void testInchesEquality_DifferentClass() {
+        assertNotEquals(
+                new QuantityMeasurementApp.Inches(1.0),
+                new QuantityMeasurementApp.Feet(1.0)
+        );
+    }
+
+    @Test
+    void testInchesEquality_SameReference() {
+        QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
+        assertEquals(a, a);
+    }
 }
