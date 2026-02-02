@@ -1,7 +1,7 @@
 package org.example;
 
 public class QuantityMeasurementApp {
-        // Value object representing feet
+        /*
         public static final class Feet {
             private final double value;
 
@@ -37,12 +37,14 @@ public class QuantityMeasurementApp {
             public String toString() {
                 return value + " ft";
             }
-        }
-
-        // Demo main (optional)
+        }*/
         public static void main(String[] args) {
-            Feet a = new Feet(1.0);
+           /* Feet a = new Feet(1.0);
             Feet b = new Feet(1.0);
-            System.out.println(a.equals(b)); // true
+            System.out.println(a.equals(b));*/
+            Length length1 = new Length(1.0, LengthUnit.FEET);
+            Length length2 = new Length(12.0, LengthUnit.INCHES);
+
+            System.out.println(length1.equals(length2));
         }
     }
