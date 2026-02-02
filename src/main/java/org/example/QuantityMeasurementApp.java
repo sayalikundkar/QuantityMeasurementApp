@@ -33,5 +33,11 @@ public class QuantityMeasurementApp {
             Length length1 = new Length(1.0, LengthUnit.FEET);
             Length length2 = new Length(12.0, LengthUnit.INCHES);
             System.out.println(length1.equals(length2));
+            Length length3 = new Length(1.0, LengthUnit.YARDS);
+            Length length4 = new Length(3.0, LengthUnit.FEET);
+            System.out.println(length3.equals(length4));
+            Length length5 = new Length(1.0, LengthUnit.CENTIMETERS);
+            Length length6 = new Length(0.393701, LengthUnit.INCHES);
+            System.out.println(length5.equals(length6));
         }
     }
