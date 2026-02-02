@@ -2,6 +2,7 @@ package org.example;
 public class QuantityMeasurementApp {
         /*
         public static final class Feet {
+    public static final class Feet {
             private final double value;
             public Feet(double value) {
                 this.value = value;
