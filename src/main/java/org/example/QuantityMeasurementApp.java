@@ -27,11 +27,32 @@ public class QuantityMeasurementApp {
                 return value + " ft";
             }
         }*/
-        public static void main(String[] args) {
+        public static boolean demonstrateLengthEquality(Length l1, Length l2) {
+            return l1.equals(l2);
+        }
+    public static double convert(
+            double value,
+            LengthUnit sourceUnit,
+            LengthUnit targetUnit) {
+        if (!Double.isFinite(value)) {
+            throw new IllegalArgumentException("Value must be finite");
+        }
+        if (sourceUnit == null || targetUnit == null) {
+            throw new IllegalArgumentException("Units cannot be null");
+        }
+        double inches = sourceUnit.toInches(value);
+        return targetUnit.fromInches(inches);
+    }
+    public static Length demonstrateLengthConversion(
+            Length length,
+            LengthUnit targetUnit) {
+        return length.convertTo(targetUnit);
+    }
+    public static void main(String[] args) {
            /* Feet a = new Feet(1.0);
             Feet b = new Feet(1.0);
             System.out.println(a.equals(b));*/
-            Length length1 = new Length(1.0, LengthUnit.FEET);
+            /*Length length1 = new Length(1.0, LengthUnit.FEET);
             Length length2 = new Length(12.0, LengthUnit.INCHES);
             System.out.println(length1.equals(length2));
             Length length3 = new Length(1.0, LengthUnit.YARDS);
@@ -39,6 +60,10 @@ public class QuantityMeasurementApp {
             System.out.println(length3.equals(length4));
             Length length5 = new Length(1.0, LengthUnit.CENTIMETERS);
             Length length6 = new Length(0.393701, LengthUnit.INCHES);
-            System.out.println(length5.equals(length6));
+            System.out.println(length5.equals(length6));*/
+            Length feet = new Length(1.0, LengthUnit.FEET);
+            Length inches = feet.convertTo(LengthUnit.INCHES);
+            System.out.println(inches);
+            System.out.println(convert(3.0, LengthUnit.YARDS, LengthUnit.FEET));
         }
     }

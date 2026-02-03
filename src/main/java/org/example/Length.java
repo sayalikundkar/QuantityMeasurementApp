@@ -7,11 +7,23 @@ public class Length {
         if (unit == null) {
             throw new IllegalArgumentException("Unit cannot be null");
         }
+        if (!Double.isFinite(value)) {
+            throw new IllegalArgumentException("Value must be finite");
+        }
         this.value = value;
         this.unit = unit;
     }
     private double toInches() {
         return unit.toInches(value);
+    }
+    public Length convertTo(LengthUnit targetUnit) {
+        if (targetUnit == null) {
+            throw new IllegalArgumentException("Target unit cannot be null");
+        }
+        double inches = this.toInches();
+        double convertedValue = targetUnit.fromInches(inches);
+        convertedValue = Math.round(convertedValue * 100.0) / 100.0;
+        return new Length(convertedValue, targetUnit);
     }
     @Override
     public boolean equals(Object obj) {
