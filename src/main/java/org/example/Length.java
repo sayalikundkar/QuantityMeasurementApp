@@ -4,14 +4,18 @@ public class Length {
     private final double value;
     private final LengthUnit unit;
     public Length(double value, LengthUnit unit) {
-        if (unit == null) {
+        if (unit == null)
             throw new IllegalArgumentException("Unit cannot be null");
-        }
-        if (!Double.isFinite(value)) {
+        if (!Double.isFinite(value))
             throw new IllegalArgumentException("Value must be finite");
-        }
         this.value = value;
         this.unit = unit;
+    }
+    public double value(){
+        return value;
+    }
+    public LengthUnit unit(){
+        return unit;
     }
     private double toInches() {
         return unit.toInches(value);
@@ -22,7 +26,6 @@ public class Length {
         }
         double inches = this.toInches();
         double convertedValue = targetUnit.fromInches(inches);
-        convertedValue = Math.round(convertedValue * 100.0) / 100.0;
         return new Length(convertedValue, targetUnit);
     }
     @Override

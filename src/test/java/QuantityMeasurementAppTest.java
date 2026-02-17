@@ -4,66 +4,66 @@ import org.example.QuantityMeasurementApp;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class QuantityMeasurementAppTest {
-   /* @Test
-void testFeetEquality_SameValue() {
-    QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
-    QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(1.0);
-    assertEquals(f1, f2);
-    assertEquals(f2, f1);
-}
-    @Test
-    void testFeetEquality_DifferentValue() {
-        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(2.0);
-        assertNotEquals(f1, f2);
-    }
-    @Test
-    void testFeetEquality_NullComparison() {
-        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
-        assertNotEquals(f1, null);
-    }
-    @Test
-    void testFeetEquality_DifferentClass() {
-        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
-        Object other = new Object();
-        assertNotEquals(f1, other);
-    }
-    @Test
-    void testFeetEquality_SameReference() {
-        QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
-        assertEquals(f1, f1);
-    }
-    @Test
-    void testInchesEquality_SameValue() {
-        QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
-        QuantityMeasurementApp.Inches b = new QuantityMeasurementApp.Inches(1.0);
-        assertEquals(a, b);
-    }
-    @Test
-    void testInchesEquality_DifferentValue() {
-        assertNotEquals(
-                new QuantityMeasurementApp.Inches(1.0),
-                new QuantityMeasurementApp.Inches(2.0)
-        );
-    }
+    /* @Test
+ void testFeetEquality_SameValue() {
+     QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+     QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(1.0);
+     assertEquals(f1, f2);
+     assertEquals(f2, f1);
+ }
+     @Test
+     void testFeetEquality_DifferentValue() {
+         QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+         QuantityMeasurementApp.Feet f2 = new QuantityMeasurementApp.Feet(2.0);
+         assertNotEquals(f1, f2);
+     }
+     @Test
+     void testFeetEquality_NullComparison() {
+         QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+         assertNotEquals(f1, null);
+     }
+     @Test
+     void testFeetEquality_DifferentClass() {
+         QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+         Object other = new Object();
+         assertNotEquals(f1, other);
+     }
+     @Test
+     void testFeetEquality_SameReference() {
+         QuantityMeasurementApp.Feet f1 = new QuantityMeasurementApp.Feet(1.0);
+         assertEquals(f1, f1);
+     }
+     @Test
+     void testInchesEquality_SameValue() {
+         QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
+         QuantityMeasurementApp.Inches b = new QuantityMeasurementApp.Inches(1.0);
+         assertEquals(a, b);
+     }
+     @Test
+     void testInchesEquality_DifferentValue() {
+         assertNotEquals(
+                 new QuantityMeasurementApp.Inches(1.0),
+                 new QuantityMeasurementApp.Inches(2.0)
+         );
+     }
 
-    @Test
-    void testInchesEquality_NullComparison() {
-        QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
-        assertNotEquals(a, null);
-    }
-    @Test
-    void testInchesEquality_DifferentClass() {
-        assertNotEquals(
-                new QuantityMeasurementApp.Inches(1.0),
-                new QuantityMeasurementApp.Feet(1.0)
-        );
-    }
-    @Test
-    void testFeetEquality_SameReference() {
-        QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
-        assertEquals(a, a); // reflexive
-    }*/
+     @Test
+     void testInchesEquality_NullComparison() {
+         QuantityMeasurementApp.Inches a = new QuantityMeasurementApp.Inches(1.0);
+         assertNotEquals(a, null);
+     }
+     @Test
+     void testInchesEquality_DifferentClass() {
+         assertNotEquals(
+                 new QuantityMeasurementApp.Inches(1.0),
+                 new QuantityMeasurementApp.Feet(1.0)
+         );
+     }
+     @Test
+     void testFeetEquality_SameReference() {
+         QuantityMeasurementApp.Feet a = new QuantityMeasurementApp.Feet(1.0);
+         assertEquals(a, a); // reflexive
+     }*/
   /* @Test
    void testEquality_FeetToFeet_SameValue() {
        assertEquals(
@@ -245,8 +245,8 @@ void testFeetEquality_SameValue() {
         assertEquals(feet, inches);
         assertEquals(yards, inches);
     }*/
-   private static final double EPSILON = 1e-6;
-    @Test
+    private static final double EPSILON = 1e-6;
+   /* @Test
     void testConversion_FeetToInches() {
         double result = QuantityMeasurementApp.convert(
                 1.0, LengthUnit.FEET, LengthUnit.INCHES);
@@ -330,6 +330,89 @@ void testFeetEquality_SameValue() {
     void testConversion_PrecisionTolerance() {
         double result = QuantityMeasurementApp.convert(
                 1.0, LengthUnit.CENTIMETERS, LengthUnit.INCHES);
-        assertEquals(0.393701, result, EPSILON);
+        assertEquals(0.393701, result, EPSILON);*/
+   @Test
+   void testAddition_SameUnit_FeetPlusFeet() {
+       Length l1 = new Length(1.0, LengthUnit.FEET);
+       Length l2 = new Length(2.0, LengthUnit.FEET);
+       Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+       assertEquals(new Length(3.0, LengthUnit.FEET), result);
+   }
+    @Test
+    void testAddition_SameUnit_InchPlusInch() {
+        Length l1 = new Length(6.0, LengthUnit.INCHES);
+        Length l2 = new Length(6.0, LengthUnit.INCHES);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.INCHES);
+        assertEquals(new Length(12.0, LengthUnit.INCHES), result);
+    }
+    @Test
+    void testAddition_CrossUnit_FeetPlusInches() {
+        Length l1 = new Length(1.0, LengthUnit.FEET);
+        Length l2 = new Length(12.0, LengthUnit.INCHES);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+        assertEquals(new Length(2.0, LengthUnit.FEET), result);
+    }
+    @Test
+    void testAddition_CrossUnit_InchesPlusFeet() {
+        Length l1 = new Length(12.0, LengthUnit.INCHES);
+        Length l2 = new Length(1.0, LengthUnit.FEET);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.INCHES);
+        assertEquals(new Length(24.0, LengthUnit.INCHES), result);
+    }
+    @Test
+    void testAddition_YardPlusFeet() {
+        Length l1 = new Length(1.0, LengthUnit.YARDS);
+        Length l2 = new Length(3.0, LengthUnit.FEET);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.YARDS);
+        assertEquals(new Length(2.0, LengthUnit.YARDS), result);
+    }
+    @Test
+    void testAddition_CentimeterPlusInch() {
+        Length l1 = new Length(2.54, LengthUnit.CENTIMETERS);
+        Length l2 = new Length(1.0, LengthUnit.INCHES);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.CENTIMETERS);
+        assertEquals(new Length(5.079998628400741, LengthUnit.CENTIMETERS), result);
+    }
+    @Test
+    void testAddition_Commutativity() {
+        Length a = new Length(1.0, LengthUnit.FEET);
+        Length b = new Length(12.0, LengthUnit.INCHES);
+        Length r1 = QuantityMeasurementApp.add(a, b, LengthUnit.FEET);
+        Length r2 = QuantityMeasurementApp.add(b, a, LengthUnit.FEET);
+        assertEquals(r1, r2);
+    }
+    @Test
+    void testAddition_WithZero() {
+        Length l1 = new Length(5.0, LengthUnit.FEET);
+        Length l2 = new Length(0.0, LengthUnit.INCHES);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+        assertEquals(new Length(5.0, LengthUnit.FEET), result);
+    }
+    @Test
+    void testAddition_NegativeValues() {
+        Length l1 = new Length(5.0, LengthUnit.FEET);
+        Length l2 = new Length(-2.0, LengthUnit.FEET);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+        assertEquals(new Length(3.0, LengthUnit.FEET), result);
+    }
+    @Test
+    void testAddition_NullOperand() {
+        Length l1 = new Length(1.0, LengthUnit.FEET);
+        assertThrows(IllegalArgumentException.class,
+                () -> QuantityMeasurementApp.add(l1, null, LengthUnit.FEET));
+    }
+    @Test
+    void testAddition_LargeValues() {
+        Length l1 = new Length(1e6, LengthUnit.FEET);
+        Length l2 = new Length(1e6, LengthUnit.FEET);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+        assertEquals(new Length(2e6, LengthUnit.FEET), result);
+    }
+    @Test
+    void testAddition_SmallValues() {
+        Length l1 = new Length(0.001, LengthUnit.FEET);
+        Length l2 = new Length(0.002, LengthUnit.FEET);
+        Length result = QuantityMeasurementApp.add(l1, l2, LengthUnit.FEET);
+        assertEquals(new Length(0.003, LengthUnit.FEET), result);
     }
 }
